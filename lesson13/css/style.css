@@ -1,0 +1,24 @@
+.block{
+  background: #232323 ;
+  color: white;
+  height: 119px;
+}
+.second__block{
+  background: #14e0ffc2;
+width: 100px;
+height: 100px;
+}
+
+.tr__block{
+  background: #1f0ba0;
+  width: 300px;
+}
+
+.spani{
+  background: #94abac;
+  border-radius: 6px;
+}
+
+.accent{
+color: lightcoral;
+}
