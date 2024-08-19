@@ -1,0 +1,30 @@
+body{
+  background-color: rgb(44, 44, 44);
+color: white;
+}
+
+.header{
+  background: #fd00c29d;
+  height: 60px;
+  border-radius: 8px;
+}
+
+.link{
+  color: white;
+}
+
+.img{
+  width: 200px;
+}
+
+.blockq{
+  background-color: rgba(150, 7, 212, 0.365);
+}
+.footer{
+  background-color: rgba(132, 37, 104, 0.642);
+  height: 300px;
+}
+.video{
+  width: 236px;
+margin-left: 100px;
+}
