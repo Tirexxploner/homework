@@ -1,0 +1,47 @@
+body{
+  background-color: rgb(44, 44, 44);
+color: rgb(0, 0, 0);
+font-size: 40px;
+font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------- */
+.border{
+  border: 3px solid #ffffff;
+  background-color: rgb(178, 253, 207);
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  overflow: auto;
+  opacity: 0.8;
+  height: 600px;
+}
+
+.block{
+
+
+
+}
+
+.parag{
+text-align: center;
+}
+.text{
+  font-size: 26px;
+  text-align: center;
+}
+.inner{
+  background-color: rgb(240, 123, 93);
+  border: 2px solid #1616166c;
+  border-radius: 40px;
+  box-shadow: rgba(54, 54, 54, 0.201) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  max-width: 400px;
+  height: 400px;
+  padding: 15px;
+  display: inline-block;
+  margin: 8px;
+  margin-right: 50px;
+}
