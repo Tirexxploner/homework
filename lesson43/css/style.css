@@ -1,0 +1,263 @@
+body {
+  background-color: #181E34;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 150% ;
+}
+.container{
+  max-width: 930px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+/* ======================HEADER===================== */
+
+.header {
+
+}
+.header-inner{
+display: flex;
+align-items: center;
+padding: 30px 0 36px;
+
+}
+.header-nav {
+  
+margin-left: auto;
+}
+.header-list {
+  display: flex;
+
+}
+.header-item {
+  margin-right: 30px;
+  transition: all .3s;
+}
+.header-item:hover{
+  color: rgb(42, 67, 165);
+}
+
+.header-btn {
+  background: rgb(255, 255, 255);
+  width: 113px;
+  height: 48px;
+  border-radius: 100px;
+  color: #2766AE;
+  border-radius: 100px;
+  padding: 14px 30px;
+  font-weight: 500;
+transition: all .3s;
+}
+.header-btn:hover{
+transform: scale(1.1);
+}
+
+/* ====================HERO====================== */
+
+.hero{
+ background: url(/img/hero-bg.jpg) 10% 50% / cover   no-repeat ; 
+padding: 120px 0;
+}
+
+.hero-title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+.hero-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text{
+  max-width: 436px;
+height: 159px;
+}
+
+.htext{
+  margin-bottom: 15px;
+}
+
+.hero-text span{
+  color: #01A2CB;
+  font-weight: 700;
+text-transform: uppercase;
+
+}
+
+span{
+  transition: all .3s;
+  }
+  
+span:hover{
+color: rgb(255, 0, 0);
+}
+
+
+.hero-btns{
+  display: flex;  
+  flex-direction: column;
+  border-radius: 100px;
+width: 100%;
+max-width: 320px;
+}
+.hero-btn1,
+.hero-btn2
+{
+  display: flex;
+  background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+  border-radius: 100px;
+  padding: 18px 30px;
+  max-width: 320px;
+  height: 56px;
+  margin-bottom: 10px;
+  justify-content: center;
+  transition: all .3s;
+} 
+
+.hero-btn1:hover,
+.hero-btn2:hover{ 
+  transform: scale(1.1);
+  background: linear-gradient(129deg, #34d6ff 0%, #0077ff 100%);;
+}
+
+
+.hero-btn1,img
+.hero-btn2 img{
+  border-left: 4px;
+
+}
+.hero-btn2{
+  margin-bottom: 0;
+}
+
+
+/* =======================CARDS====================*/
+
+.cards {
+  padding: 120px 0;
+}
+
+.cards-title {
+  text-align: center;
+  font-weight: 600;
+font-size: 40px;
+line-height: 49px;
+text-transform: uppercase;
+margin-bottom: 15px;
+
+}
+.cards-text {
+  text-align: center;
+  max-width: 513px;
+  margin: 0 auto 60px;
+}
+.cards-flex {
+  display: flex;
+  flex-wrap: wrap;
+margin-bottom: -28px;
+  padding-bottom: 30px; 
+}
+.cards-flex-item {
+margin-bottom: 28px;
+flex: 0 0 25%;
+}
+.cards-flex-inner{
+  border: 2px solid #176bae;
+  border-radius: 16px;
+  padding: 28px;
+  width: 204px;
+  height: 141px;
+  box-shadow: 4px 4px 13px 0 rgba(5, 13, 41, 0.76);
+  background: #197cb8;
+
+  flex: 0 0 25%;
+}
+
+
+.cards-flex-title {
+  font-weight: 600;
+font-size: 22px;
+text-transform: uppercase;
+
+}
+.cards-flex-text {
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+}
+
+
+.cards-btn1{
+  text-align: center;
+  display: block;
+border-radius: 100px;
+padding: 18px 30px;
+background: linear-gradient(129deg, #00a4cc 0%, #2766ae 100%);
+max-width: 436px;
+margin: 0 auto;
+transition: all .3s;
+}
+
+.cards-btn1:hover{
+  transform: scale(1.1);
+}
+
+/* ===================FOOTER==================== */
+
+.footer {
+  border-top: 1px solid #323952;
+padding: 60px 0;
+}
+.footer-inner {
+  display: flex;
+}
+.footer-desc{
+  max-width: 267px;
+  margin-right: auto;
+}
+.footer-desc a{
+  display: inline-block; 
+margin-bottom: 15px;
+}
+.footer-col {
+  max-width: 204px;
+  width: 100%;
+ 
+}
+.footer-col-margin{
+margin-right: 28px;
+}
+.footer-title {
+  font-weight: 600;
+font-size: 22px;
+text-transform: uppercase;
+margin-bottom: 20px;
+margin-right: 115px;
+}
+.footer-title:last-child {
+
+margin-right: 0;
+}
+.footer-list {
+ 
+}
+.footer-item {
+  margin-bottom: 10px;
+  transition: all .3s;
+}
+.footer-item:hover {
+  color:rgb(42, 67, 165);
+
+}
+.footer-link {
+
+}
