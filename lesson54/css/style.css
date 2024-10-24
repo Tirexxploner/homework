@@ -1,0 +1,30 @@
+body {
+  background: #262628;
+  color: white;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.block {
+  display: flex;
+  background: rgb(0, 255, 51);
+  border-radius: 10px;
+  min-height: 100px;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  left: 45%;
+}
+
+.circle{
+  background: rgb(255, 0, 111);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  position: relative;
+ bottom: 50px;
+  left: 100px;
+}
