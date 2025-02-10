@@ -55,26 +55,26 @@
 
   function toggleTab(e) {
 
-      const tabControl = e.target.closest('.tab-conrols__link')
+    const tabControl = e.target.closest('.tab-conrols__link')
 
-      if (!tabControl) return
-      e.preventDefault()
-      if (tabControl.classList.contains('tab-conrols__link--active')) return
+    if (!tabControl) return
+    e.preventDefault()
+    if (tabControl.classList.contains('tab-conrols__link--active')) return
 
-      const tabContentID = tabControl.getAttribute('href')
-      const tabContent = document.querySelector(tabContentID)
-      const activeControl = document.querySelector('.tab-conrols__link--active')
-      const activeContent = document.querySelector('.tab-content--show')
+    const tabContentID = tabControl.getAttribute('href')
+    const tabContent = document.querySelector(tabContentID)
+    const activeControl = document.querySelector('.tab-conrols__link--active')
+    const activeContent = document.querySelector('.tab-content--show')
 
-      if (activeControl) {
-          activeControl.classList.remove('tab-conrols__link--active')
-      }
-      if (activeContent) {
-          activeContent.classList.remove('tab-content--show')
-      }
+    if (activeControl) {
+      activeControl.classList.remove('tab-conrols__link--active')
+    }
+    if (activeContent) {
+      activeContent.classList.remove('tab-content--show')
+    }
 
-      tabControl.classList.add('tab-conrols__link--active')
-      tabContent.classList.add('tab-content--show')
+    tabControl.classList.add('tab-conrols__link--active')
+    tabContent.classList.add('tab-content--show')
 
   }
 
@@ -83,35 +83,64 @@
 
   const accordionLists = document.querySelectorAll('.accordion-list');
 
-    accordionLists.forEach(el => {
+  accordionLists.forEach(el => {
 
-        el.addEventListener('click', (e) => {
+    el.addEventListener('click', (e) => {
 
-            const accordionList = e.currentTarget
-            const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
-            const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
+      const accordionList = e.currentTarget
+      const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+      const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
 
-            const accordionControl = e.target.closest('.accordion-list__control');
-            if (!accordionControl) return
-            const accordionItem = accordionControl.parentElement;
-            const accordionContent = accordionControl.nextElementSibling;
+      const accordionControl = e.target.closest('.accordion-list__control');
+      if (!accordionControl) return
+      const accordionItem = accordionControl.parentElement;
+      const accordionContent = accordionControl.nextElementSibling;
 
-            if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
-                accordionOpenedItem.classList.remove('accordion-list__item--opened');
-                accordionOpenedContent.style.maxHeight = null;
-            }
-            accordionItem.classList.toggle('accordion-list__item--opened');
+      if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+        accordionOpenedItem.classList.remove('accordion-list__item--opened');
+        accordionOpenedContent.style.maxHeight = null;
+      }
+      accordionItem.classList.toggle('accordion-list__item--opened');
 
-            if (accordionItem.classList.contains('accordion-list__item--opened')) {
-                accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
-            } else {
-                accordionContent.style.maxHeight = null;
-            }
-
-        });
+      if (accordionItem.classList.contains('accordion-list__item--opened')) {
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+      } else {
+        accordionContent.style.maxHeight = null;
+      }
 
     });
 
-  
+  });
 
+
+
+  // Слайдер-галлерея
+
+  const swiper = new Swiper('.gallery__slider', {
+
+    spaceBetween: 32,
+    slidesPerView: 4,
+
+    pagination: {
+      el: '.gallery__pagination',
+      type: 'fraction',
+    },
+
+    navigation: {
+      nextEl: '.gallery__next',
+      prevEl: '.gallery__prev',
+    },
+    breakpoints: {
+      601: {
+          slidesPerView: 3,
+      },
+      801: {
+          spaceBetween: 32,
+      },
+      1101: {
+          slidesPerView: 4,
+      }
+  }
+
+  });
 })()
