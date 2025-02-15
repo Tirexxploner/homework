@@ -81,7 +81,7 @@ body {
   padding: 3px 15px;
   height: 62px;
   width: 100%;
-  transition: var(--transition);
+  transition: all .4s;
 }
 
 .button:hover {
