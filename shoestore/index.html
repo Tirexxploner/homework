@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="tab-icon.ico" type="image/x-icon">
+    <title>Top Sellers</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <ul class="nav__list" id="navList">
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">ALL</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">FOOTWEAR</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">APPAREL</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">BASKETBALL</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">SLIDES</a>
+                            </li>
+                        </ul>
+                        <div class="search-container">
+                            <img src="img/search.svg" alt="Поиск" class="search-icon" onclick="performSearch()">
+                            <input type="text" id="searchInput" class="search-input" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="hero">
+                <div class="hero__inner">
+                    <a href="#" class="button">BUY NOW</a>
+                </div>
+            </section>
+        </header>
+        <main class="main">
+            <section class="slider">
+                <div class="container">
+                    <div class="slider__inner">
+                        <div class="slider__top">
+                            <div class="slider__logo">
+                                <img src="img/logo.svg" alt="">
+                            </div>
+                            <div class="slider__filter">FILTERS</div>
+                            <div class="slider__sort">SORT BY</div>
+                            <div class="slider__burger">
+                                <img src="img/Vector.svg" alt="">
+                            </div>
+                            <div class="slider__groupe">
+                                <img src="img/Group.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="slider__container">
+                            <div class="gallery">
+                                <div class="gallery__slide">
+                                    <img src="img/slider1.png" alt="Image 1">
+                                    <div class="slider__bottom">
+                                        <div class="slider__bottom-company">
+                                            Nike
+                                        </div>
+                                        <div class="slider__bottom-name">
+                                            Air Force 1 Orche
+                                        </div>
+                                        <div class="slider__bottom-price">
+                                            ₹9,985
+                                        </div>
+                                        <div class="slider__bottom-size">
+                                            Sizes: 8 -10
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__slide">
+                                    <img src="img/slider2.png" alt="Image 2">
+                                    <div class="slider__bottom">
+                                        <div class="slider__bottom-company">
+                                            Nike
+                                        </div>
+                                        <div class="slider__bottom-name">
+                                            Air Force Panda
+                                        </div>
+                                        <div class="slider__bottom-price">
+                                            ₹19,655
+                                        </div>
+                                        <div class="slider__bottom-size">
+                                            Sizes: 6 -10
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__slide">
+                                    <img src="img/slider3.png" alt="Image 3">
+                                    <div class="slider__bottom">
+                                        <div class="slider__bottom-company">
+                                            Nike
+                                        </div>
+                                        <div class="slider__bottom-name">
+                                            Air Force 1 ‘07
+                                        </div>
+                                        <div class="slider__bottom-price">
+                                            ₹15,750
+                                        </div>
+                                        <div class="slider__bottom-size">
+                                            Sizes: 9-12
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__slide">
+                                    <img src="img/slider4.png" alt="Image 4">
+                                    <div class="slider__bottom">
+                                        <div class="slider__bottom-company">
+                                            New Balance
+                                        </div>
+                                        <div class="slider__bottom-name">
+                                            327’ Munsell White
+                                        </div>
+                                        <div class="slider__bottom-price">
+                                            ₹11,999
+                                        </div>
+                                        <div class="slider__bottom-size">
+                                            Sizes: 7-11
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__slide">
+                                    <img src="img/slider1.png" alt="Image 2">
+                                    <div class="slider__bottom">
+                                        <div class="slider__bottom-company">
+                                            Nike
+                                        </div>
+                                        <div class="slider__bottom-name">
+                                            Air Force 1 Orche
+                                        </div>
+                                        <div class="slider__bottom-price">
+                                            ₹9,985
+                                        </div>
+                                        <div class="slider__bottom-size">
+                                            Sizes: 8 -10
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gallery__slide">
+                                    <img src="img/slider3.png" alt="Image 2">
+                                    <div class="slider__bottom">
+                                        <div class="slider__bottom-company">
+                                            Nike
+                                        </div>
+                                        <div class="slider__bottom-name">
+                                            Air Force 1 Orche
+                                        </div>
+                                        <div class="slider__bottom-price">
+                                            ₹9,985
+                                        </div>
+                                        <div class="slider__bottom-size">
+                                            Sizes: 8 -10
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="custom-arrows">
+                                <button class="slick-prev">
+                                    <img src="img/arrowleft.svg" alt="Previous">
+                                </button>
+                                <button class="slick-next">
+                                    <img src="img/arrowrigth.svg" alt="Next">
+                                </button>
+                            </div>
+                        </div>
+                        <!-- <a href="#" class="slider__button">SEE ALL</a> -->
+                    </div>
+                </div>
+            
+            </section>
+            
+            <section class="info">
+                <div class="container">
+                    <div class="info__text">
+                        <h1 class="first__text">Not</h1>
+                        <h1 class="second__text">Just For</h1>
+                        <h1 class="third__text">Street</h1>
+                        <h1 class="fourth__text">Anymore</h1>
+                    </div>
+                    <div class="brands-section">
+                        <img src="img/nike.svg" alt="adidas">
+                        <img src="img/adidas.svg" alt="adidas">
+                        <img src="img/vans.svg" alt="VANS">
+                        <img src="img/newbalance.svg" alt="new balance">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer"></footer>
+    </div>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
